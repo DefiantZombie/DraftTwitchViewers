@@ -166,6 +166,7 @@ namespace DraftTwitchViewers
                     case "AcquireCrew":
                         {
                             node.SetValue("title", "Save " + info["name"]);
+                            node.SetValue("kerbal", info["name"]);
                             break;
                         }
                     case "AcquirePart":
@@ -177,6 +178,7 @@ namespace DraftTwitchViewers
                     case "RecoverKerbal":
                         {
                             node.SetValue("title", "Recover " + info["name"] + " on Kerbin");
+                            node.SetValue("kerbal", info["name"]);
                             break;
                         }
                     case "RecoverPart":
